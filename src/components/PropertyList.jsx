@@ -13,7 +13,7 @@ const PropertyList = () => {
   // Fetch de la API
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/properties")
+      .get("https://inmobiliaria-backend-kappa.vercel.app/api/properties")
       .then((response) => {
         setProperties(response.data);
       })

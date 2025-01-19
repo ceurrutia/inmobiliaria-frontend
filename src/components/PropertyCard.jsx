@@ -51,7 +51,7 @@ const CardProperty = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/properties")
+      .get("https://inmobiliaria-backend-kappa.vercel.app/api/properties")
       .then((response) => {
         const data = response.data;
         console.log(data);
